@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+	<RecipeDef>
+		<defName>GR_ExtractArcheoGenes</defName>
+		<label>extract genes from a dinosaur</label>
+		<description>Extract genetic material from a dinosaur.</description>
+		<jobString>Extracting Genetic Material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+			<li>GR_GeneticExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+
+					<thingDefs>
+						<li>Corpse_TyrannosaurusRex</li>
+						<li>Corpse_Yutyrannus</li>
+						<li>Corpse_Carnotaurus</li>
+						<li>Corpse_Allosaurus</li>
+						<li>Corpse_Spinosaurus</li>
+						<li>Corpse_Baryonyx</li>
+						<li>Corpse_Ankylosaurus</li>
+						<li>Corpse_Minmi</li>
+						<li>Corpse_Brachiosaurus</li>						
+						<li>Corpse_Brontosaurus</li>
+						<li>Corpse_Diplodocus</li>
+						<li>Corpse_Magyarosaurus</li>
+						<li>Corpse_Utahraptor</li>
+						<li>Corpse_Dakotaraptor</li>
+						<li>Corpse_Dilophosaurus</li>
+						<li>Corpse_Velociraptor</li>
+						<li>Corpse_Compsognathus</li>
+						<li>Corpse_Gallimimus</li>						
+						<li>Corpse_Gigantoraptor</li>
+						<li>Corpse_Iguanodon</li>
+						<li>Corpse_Parasaur</li>
+						<li>Corpse_Corythosaurus</li>
+						<li>Corpse_Deinocheirus</li>
+						<li>Corpse_Therizinosaurus</li>
+						<li>Corpse_Pachycephalosaurus</li>
+						<li>Corpse_Stygimoloch</li>
+						<li>Corpse_Dryosaurus</li>						
+						<li>Corpse_Stegosaurus</li>
+						<li>Corpse_Triceratops</li>
+						<li>Corpse_Protoceratops</li>
+						<li>Corpse_Quetzalcoatlus</li>
+						<li>Corpse_Pteranodon</li>
+
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>Corpse_TyrannosaurusRex</li>
+						<li>Corpse_Yutyrannus</li>
+						<li>Corpse_Carnotaurus</li>
+						<li>Corpse_Allosaurus</li>
+						<li>Corpse_Spinosaurus</li>
+						<li>Corpse_Baryonyx</li>
+						<li>Corpse_Ankylosaurus</li>
+						<li>Corpse_Minmi</li>
+						<li>Corpse_Brachiosaurus</li>						
+						<li>Corpse_Brontosaurus</li>
+						<li>Corpse_Diplodocus</li>
+						<li>Corpse_Magyarosaurus</li>
+						<li>Corpse_Utahraptor</li>
+						<li>Corpse_Dakotaraptor</li>
+						<li>Corpse_Dilophosaurus</li>
+						<li>Corpse_Velociraptor</li>
+						<li>Corpse_Compsognathus</li>
+						<li>Corpse_Gallimimus</li>						
+						<li>Corpse_Gigantoraptor</li>
+						<li>Corpse_Iguanodon</li>
+						<li>Corpse_Parasaur</li>
+						<li>Corpse_Corythosaurus</li>
+						<li>Corpse_Deinocheirus</li>
+						<li>Corpse_Therizinosaurus</li>
+						<li>Corpse_Pachycephalosaurus</li>
+						<li>Corpse_Stygimoloch</li>
+						<li>Corpse_Dryosaurus</li>						
+						<li>Corpse_Stegosaurus</li>
+						<li>Corpse_Triceratops</li>
+						<li>Corpse_Protoceratops</li>
+						<li>Corpse_Quetzalcoatlus</li>
+						<li>Corpse_Pteranodon</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_DinoGenetic>1</GR_DinoGenetic>
+		</products>
+		<skillRequirements>
+			<Intellectual>8</Intellectual>
+		</skillRequirements>
+	</RecipeDef>
+
+	
+
+
+
+
+</Defs>

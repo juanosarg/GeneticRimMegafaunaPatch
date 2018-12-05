@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<ThingDef ParentName="WoolBase">
+		<defName>GR_DinoFeatherWool</defName>
+		<label>dino featherwool</label>
+		<description>This seems to be an amalgamation of feathers and wool, perfectly interweaved. Gives excellent defense against blunt attacks, and is quite warm.</description>
+
+		<graphicData>
+			<texPath>Things/Item/GR_DinoFeatherWool</texPath>
+			<graphicClass>Graphic_Single</graphicClass>		
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+
+		<statBases>
+			<StuffPower_Armor_Blunt>0.20</StuffPower_Armor_Blunt>
+
+			<StuffPower_Insulation_Cold>32</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>14</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>((131,78,47)</color>
+		</stuffProps>
+
+
+	</ThingDef>
+
+	<ThingDef ParentName="WoolBase">
+		<defName>GR_ScalyWool</defName>
+		<label>dino scaly wool</label>
+		<description>This seems to be an amalgamation of keratinous scales and wool, perfectly interweaved. Gives excellent defense against sharp attacks, and is quite warm.</description>
+		<graphicData>
+			<texPath>Things/Item/GR_ScalyWool</texPath>
+			<graphicClass>Graphic_Single</graphicClass>		
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<StuffPower_Armor_Sharp>0.40</StuffPower_Armor_Sharp>
+
+			<StuffPower_Insulation_Cold>30</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>16</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(152,162,169)</color>
+
+		</stuffProps>
+	</ThingDef>
+
+
+
+
+
+
+
+</Defs>

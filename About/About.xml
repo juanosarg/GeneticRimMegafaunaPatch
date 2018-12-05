@@ -1,0 +1,29 @@
+<ModMetaData>
+	<name>GeneticRim Dinosauria Patch</name>
+	<author>Sarg</author>
+	<targetVersion>1.0.2059</targetVersion>
+	<description>Extract DNA from animals and hybridize them to create new, exotic species!
+
+&lt;size=24&gt;Features&lt;/size&gt;
+- Adds eight hybrids between vanilla creatures and dinosaurs from the Dinosauria mod!
+- Adds a new machine, the Archeo-genepod, to mix genes from dinosaurs and create your hybrids.
+
+&lt;size=24&gt;Load Order&lt;/size&gt;
+- As with all patch mods, be sure to call it after Dinosauria mod and GeneticRim mod, or else you'll get some errors.
+
+&lt;size=24&gt;Compatibility&lt;/size&gt;
+Compatible with A Dog Said
+Should be savegame compatible and not break anything. Should!
+
+&lt;size=24&gt;Credit&lt;/size&gt;
+Credit goes to Spincrus for all his awesome work on Rimworld.
+
+&lt;size=24&gt;Changelog&lt;/size&gt;
+v3.0: Updated to RimWorld 1.0 (18/10/18)
+v2.02: Added A Dog Said patch (16/09/18)
+v2.0: B19 update (31/08/18)
+v1.1 Bugfixes. Full changelist on GitHub (03/03/18)
+v1.0: Release (04/01/18)
+
+		</description>
+</ModMetaData>

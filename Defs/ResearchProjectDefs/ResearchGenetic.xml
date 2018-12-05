@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>GR_ArcheoGeneticEngineering</defName>
+    <label>archeogenetic engineering</label>
+    <tab>GR_GeneticReseach</tab>
+    <techLevel>Industrial</techLevel>
+    <description>This research allows you to recover DNA from dinosaurs, allowing the creation of dinosaur hybrids.</description>
+    <baseCost>1000</baseCost>
+    <prerequisites>
+      <li>GR_GeneticEngineering</li>
+    </prerequisites>
+    
+		<researchViewX>5</researchViewX>
+		<researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+
+
+
+</Defs>
