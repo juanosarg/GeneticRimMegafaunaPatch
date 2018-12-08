@@ -2,17 +2,17 @@
 <Defs>
 
   <ResearchProjectDef>
-    <defName>GR_ArcheoGeneticEngineering</defName>
-    <label>archeogenetic engineering</label>
+    <defName>GR_MegafaunaGeneticEngineering</defName>
+    <label>megafauna genetic engineering</label>
     <tab>GR_GeneticReseach</tab>
     <techLevel>Industrial</techLevel>
-    <description>This research allows you to recover DNA from dinosaurs, allowing the creation of dinosaur hybrids.</description>
+    <description>This research allows you to recover DNA from megafauna animals, including the Megasloth and animals that were part of the Megafauna Project. This allows for the creation of megafauna hybrids.</description>
     <baseCost>1000</baseCost>
     <prerequisites>
       <li>GR_GeneticEngineering</li>
     </prerequisites>
     
-		<researchViewX>5</researchViewX>
+		<researchViewX>6</researchViewX>
 		<researchViewY>0</researchViewY>
   </ResearchProjectDef>
 

@@ -5,12 +5,12 @@
 
 
   <ThingDef ParentName="GR_GeneticsBase">
-    <defName>GR_DinoGenetic</defName>
-    <label>dinosaur genetic material</label>
-    <description>A vial of genetic material extracted from a dinosaur.</description>
+    <defName>GR_MegafaunaGenetic</defName>
+    <label>megafauna genetic material</label>
+    <description>A vial of genetic material extracted from a megafauna animal.</description>
     
     <graphicData>
-            <texPath>Things/Item/GR_geneticmaterialsgreen</texPath>
+            <texPath>Things/Item/GR_geneticmaterialsyellow</texPath>
 
     </graphicData>
 	<statBases>

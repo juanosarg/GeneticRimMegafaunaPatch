@@ -6,13 +6,13 @@
 
 	
 	<WorkGiverDef>
-		<defName>GR_DoBillsArcheoGenePod</defName>
-		<label>works at archeo genepod</label>
+		<defName>GR_DoBillsMegafaunaGenePod</defName>
+		<label>works at megafauna genepod</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
 		<priorityInType>100</priorityInType>
 		<fixedBillGiverDefs>
-			<li>GR_ArcheoGenePod</li>
+			<li>GR_MegafaunaGenePod</li>
 		</fixedBillGiverDefs>
 		<verb>combining genetic materials</verb>
 		<gerund>combining genetic material at</gerund>

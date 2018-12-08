@@ -6,12 +6,12 @@
 
   
 <ThingDef ParentName="BuildingBase">
-    <defName>GR_ArcheoGenePod</defName>
-    <label>archeo genePod</label>
+    <defName>GR_MegafaunaGenePod</defName>
+    <label>megafauna genePod</label>
     <thingClass>Building_WorkTable</thingClass>
-    <description>Dinosaur genetic material samples are combined and grown in this laboratory.</description>
+    <description>Megafauna genetic material samples are combined and grown in this laboratory.</description>
     <graphicData>
-      <texPath>Things/Building/GR_ArcheoGenePod</texPath>
+      <texPath>Things/Building/GR_MegafaunaGenePod</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,4)</drawSize>
      
@@ -55,7 +55,7 @@
         </linkableFacilities>
       </li>
     </comps>
-    <researchPrerequisites><li>GR_ArcheoGeneticEngineering</li></researchPrerequisites>
+    <researchPrerequisites><li>GR_MegafaunaGeneticEngineering</li></researchPrerequisites>
 		<designationCategory>GR_GeneticsTab</designationCategory>
 
 </ThingDef>
