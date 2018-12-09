@@ -59,6 +59,61 @@
 			<Intellectual>8</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>GR_CreateMegafaunaRodentIncubator</defName>
+		<label>megafauna rodent incubator</label>
+		<description>Fill an incubator with genes from a rodent/leporid and a megafauna animal</description>
+		<jobString>Filling Incubator</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+
+			<li>GR_MegafaunaGenePod</li>				
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_EmptyIncubator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_RodentGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_MegafaunaGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>GR_EmptyIncubator</li>
+				<li>GR_RodentGenetic</li>
+				<li>GR_MegafaunaGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_MegafaunaRodentIncubator>1</GR_MegafaunaRodentIncubator>
+		</products>
+		<researchPrerequisite>GR_MegafaunaGeneticEngineering</researchPrerequisite>
+		<skillRequirements>
+			<Intellectual>8</Intellectual>
+		</skillRequirements>
+	</RecipeDef>
 
 	<RecipeDef>
 		<defName>GR_CreateMegafaunaBoomalopeIncubator</defName>

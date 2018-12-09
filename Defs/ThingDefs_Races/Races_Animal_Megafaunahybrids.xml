@@ -3,9 +3,9 @@
 
 	<!-- Bear -->
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>GR_Spinobear</defName>
-		<label>spinobear</label>
-		<description>This hybrid therapod has bear-like characteristics. There are several theories concerning the use of the Spinosaur's spinal fan-sail, but in the case of the Spinobear it is clear what use it has: kicking your ass.\n\nUseful abilities: Aside from obviously being a very powerful creature, they produce a weid mixture of wool and scales that can be sheared and used in textile operations. They can also be slaughtered for their pelts. Like all dinosaur hybrids, they are oviparous.</description>
+		<defName>GR_Elasmobearium</defName>
+		<label>elasmobearium</label>
+		<description>The Elasmobearium is an hybrid of a bear and an ancient ancestor of a rhinoceros. The Elasmobearium is a pretty aggressive omnivore, using its horn to impale its victims and then mauling them with their vicious paws.\n\nUseful abilities: Aside from obviously being a very powerful creature, they produce a weid mixture of wool and scales that can be sheared and used in textile operations. They can also be slaughtered for their pelts. Like all dinosaur hybrids, they are oviparous.</description>
 
 
 		<statBases>
