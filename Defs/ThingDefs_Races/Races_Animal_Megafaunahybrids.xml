@@ -780,9 +780,9 @@
 
 	<!-- Muffalo -->
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>GR_Triceraffalo</defName>
-		<label>triceraffalo</label>
-		<description>This enormous ceratopsid can be used as an incredibly powerful pack beast. It is also quite capable of defending itself, with its sheer mass and huge horns.\n\nUseful abilities: Produces wool, eggs, milk, and acts as the most powerful pack beast known to science... yet.</description>
+		<defName>GR_Paraceramuffalo</defName>
+		<label>paraceramuffalo</label>
+		<description>The Paraceratherium was the biggest land mammal to ever exist. When you hibridize it with a sturdy muffalo, the resulting creature is the most powerful pack animal.\n\nUseful abilities: Produces wool, eggs, milk, and acts as the most powerful pack beast known to science... yet.</description>
 
 
 		<statBases>
