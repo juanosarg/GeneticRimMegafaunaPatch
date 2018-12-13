@@ -22,6 +22,24 @@
 		<MarketValue>4.5</MarketValue>
     </statBases>
   </ThingDef>
+  
+  	<ThingDef ParentName="WoolBase">
+		<defName>GR_ParaceramuffaloWool</defName>
+		<label>paraceramuffalo wool</label>
+	 
+    <description>A coarse and strong wool. Exceptionally warm.</description>
+    <graphicData>
+      <color>(141,167,175)</color>
+    </graphicData>
+    <statBases>
+      <StuffPower_Armor_Sharp>0.85</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>36</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>15</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(141,167,175)</color>
+    </stuffProps>
+  </ThingDef>
 
 
 

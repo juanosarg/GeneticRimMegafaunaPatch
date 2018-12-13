@@ -82,6 +82,18 @@
 </ThingDef>
 
 <ThingDef ParentName="GR_IncubatorsBaseMegafauna">
+    <defName>GR_MegafaunaRodentIncubator</defName>
+    <label>megafauna rodent incubator</label>
+    <description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a rodent-Doedicurus hybrid</description>
+    <comps>
+      <li Class="NewHatcher.CompProperties_Incubator">
+        <hatcherDaystoHatch>1</hatcherDaystoHatch>
+        <hatcherPawn>GR_Doedicoon</hatcherPawn>
+      </li>
+    </comps>
+</ThingDef>
+
+<ThingDef ParentName="GR_IncubatorsBaseMegafauna">
     <defName>GR_MegafaunaThrumboIncubator</defName>
     <label>megafauna thrumbo incubator</label>
     <description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a thrumbo-Draeodon hybrid</description>

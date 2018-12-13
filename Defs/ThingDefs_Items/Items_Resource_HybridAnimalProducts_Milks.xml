@@ -4,11 +4,11 @@
 
   
   	<ThingDef ParentName="ResourceBase">
-    <defName>GR_DinoMilk</defName>
-    <label>dino "milk"</label>
-    <description>Triceramuffalos produce a secretion from various parts of their upper digestive tract. The resulting "milk" is fed to their offspring via regurgitation, and is similar to what mammals produce; it contains similar levels of fat and protein, along with carotenoids and antibodies. Now, why would anyone want to drink this? 'Cause it's the Rim, baby!</description>
+    <defName>GR_ParaMilk</defName>
+    <label>paraceramuffalo milk</label>
+    <description>Paraceramuffalo milk is rich and creamy. Probably too rich in fat, but certainly tasty.</description>
 		<graphicData>
-			<texPath>Things/Item/GR_DinoMilk</texPath>
+      <texPath>Things/Item/Resource/Milk</texPath>
 			      <graphicClass>Graphic_Single</graphicClass>
 
 		</graphicData>
@@ -17,7 +17,35 @@
 			<MarketValue>3.1</MarketValue>
 			<Mass>0.045</Mass>
 			<MaxHitPoints>60</MaxHitPoints>
-						<Nutrition>0.07</Nutrition>
+						<Nutrition>0.075</Nutrition>
+
+		</statBases>
+		<tradeability>Sellable</tradeability>
+		
+		<ingestible>
+			<preferability>RawBad</preferability>
+			<foodType>AnimalProduct, Fluid</foodType>
+		</ingestible>
+		<thingCategories>
+			<li>AnimalProductRaw</li>
+		</thingCategories>
+	</ThingDef>
+	
+	  	<ThingDef ParentName="ResourceBase">
+    <defName>GR_GreenMilk</defName>
+    <label>green milk</label>
+    <description>This Lizardochs milk is green coloured, and quite unappetizing.</description>
+		<graphicData>
+      <texPath>Things/Item/GR_GreenMilk</texPath>
+			      <graphicClass>Graphic_Single</graphicClass>
+
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MarketValue>3.1</MarketValue>
+			<Mass>0.045</Mass>
+			<MaxHitPoints>60</MaxHitPoints>
+						<Nutrition>0.03</Nutrition>
 
 		</statBases>
 		<tradeability>Sellable</tradeability>

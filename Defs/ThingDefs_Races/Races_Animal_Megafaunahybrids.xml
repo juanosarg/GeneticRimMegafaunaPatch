@@ -93,6 +93,7 @@
 		</comps>
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+	  <herdMigrationAllowed>false</herdMigrationAllowed>
 
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
@@ -276,6 +277,7 @@
 		</comps>
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+	  <herdMigrationAllowed>false</herdMigrationAllowed>
 
 			<deathActionWorkerClass>ExplosionTypes.DeathActionWorker_BiggerExplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
@@ -452,6 +454,7 @@
 		</comps>
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+	  <herdMigrationAllowed>false</herdMigrationAllowed>
 
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
@@ -666,6 +669,7 @@
 		</comps>
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+	  <herdMigrationAllowed>false</herdMigrationAllowed>
 
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
@@ -782,40 +786,38 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Paraceramuffalo</defName>
 		<label>paraceramuffalo</label>
-		<description>The Paraceratherium was the biggest land mammal to ever exist. When you hibridize it with a sturdy muffalo, the resulting creature is the most powerful pack animal.\n\nUseful abilities: Produces wool, eggs, milk, and acts as the most powerful pack beast known to science... yet.</description>
+		<description>The Paraceratherium was the biggest land mammal to ever exist. When you hibridize it with a sturdy muffalo, the resulting creature is the most powerful pack animal ever created. Incredibly stubborn and bad-tempered, though.\n\nUseful abilities: Produces wool and milk, and acts as an incredibly strong pack beast.</description>
 
 
 		<statBases>
-			<MoveSpeed>4.5</MoveSpeed>
-			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
-			<MarketValue>1500</MarketValue>
-			<MeatAmount>90</MeatAmount>
-			<LeatherAmount>32</LeatherAmount>
-
+			<MoveSpeed>4</MoveSpeed>
+			<ComfyTemperatureMin>-80</ComfyTemperatureMin>
+			<MarketValue>3500</MarketValue>
+			
 
 		</statBases>
-		<tools>
-			<li>
-				<label>horns</label>
-				<capacities>
-					<li>Scratch</li>
-					<li>Stab</li>
-				</capacities>
-				<power>25</power>
-				<cooldownTime>2.2</cooldownTime>
-				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>head</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>15</power>
-				<cooldownTime>2.2</cooldownTime>
-				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<chanceFactor>0.2</chanceFactor>
-			</li>
-		</tools>
+		 <tools>
+      <li>
+        <label>left hoof</label>
+        <cooldownTime>1.75</cooldownTime>
+        <power>17</power>
+        <capacities><li>Blunt</li></capacities>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right hoof</label>
+        <cooldownTime>1.75</cooldownTime>
+        <power>17</power>
+        <capacities><li>Blunt</li></capacities>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <cooldownTime>1.5</cooldownTime>
+        <power>12</power>
+        <capacities><li>Bite</li></capacities>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+      </li>
+    </tools>
 
 		<comps>
 
@@ -824,45 +826,40 @@
 				<dinostamina>true</dinostamina>
 				<carrymore>true</carrymore>
 			</li>
-			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>GR_TriceraffaloEggUnfertilized</eggUnfertilizedDef>
-				<eggFertilizedDef>GR_TriceraffaloEggFertilized</eggFertilizedDef>
-				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>30</eggLayIntervalDays>
-				<eggCountRange>1</eggCountRange>
-			</li>
+			
 			<li Class="CompProperties_Milkable">
-				<milkDef>GR_DinoMilk</milkDef>
+				<milkDef>GR_ParaMilk</milkDef>
 				<milkIntervalDays>2</milkIntervalDays>
 				<milkAmount>12</milkAmount>
 			</li>
 			<li Class="CompProperties_Shearable">
-				<woolDef>GR_DinoFeatherWool</woolDef>
+				<woolDef>GR_ParaceramuffaloWool</woolDef>
 				<shearIntervalDays>25</shearIntervalDays>
 				<woolAmount>60</woolAmount>
 			</li>
 		</comps>
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+	  <herdMigrationAllowed>false</herdMigrationAllowed>
 
-			<herdAnimal>false</herdAnimal>
+			<herdAnimal>true</herdAnimal>
 			<predator>false</predator>
-			<body>Ceratopsid</body>
-			<baseHungerRate>1.8</baseHungerRate>
-			<baseBodySize>10</baseBodySize>
-			<baseHealthScale>5.5</baseHealthScale>
-			<foodType>VegetarianRoughAnimal</foodType>
-			<gestationPeriodDays>40</gestationPeriodDays>
+			<body>QuadrupedAnimalWithHooves</body>
+			<baseHungerRate>3.75</baseHungerRate>
+			<baseBodySize>16</baseBodySize>
+			<baseHealthScale>12</baseHealthScale>
+			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+			<gestationPeriodDays>30</gestationPeriodDays>
 			<packAnimal>true</packAnimal>
-			<wildness>0.70</wildness>
+			<wildness>0.80</wildness>
 			<lifeExpectancy>75</lifeExpectancy>
 			<trainability>Advanced</trainability>
-			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>0.35</manhunterOnDamageChance>
-			<useLeatherFrom>Triceratops</useLeatherFrom>
-			<useMeatFrom>Triceratops</useMeatFrom>
+			 <manhunterOnTameFailChance>0.028</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.75</manhunterOnDamageChance>
+      <leatherDef>Leather_Rhinoceros</leatherDef>
+      <useMeatFrom>Rhinoceros</useMeatFrom>
 
-			<nuzzleMtbHours>275</nuzzleMtbHours>
+			<nuzzleMtbHours>450</nuzzleMtbHours>
 			<litterSizeCurve>
 				<points>
 					<li>(0.99, 0)</li>
@@ -871,22 +868,22 @@
 				</points>
 			</litterSizeCurve>
 			<lifeStageAges>
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.4</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>0.8</minAge>
-					<soundCall>Pawn_Thrumbo_Call</soundCall>
-					<soundAngry>Pawn_Thrumbo_Angry</soundAngry>
-					<soundWounded>Pawn_Thrumbo_Pain</soundWounded>
-					<soundDeath>Pawn_Thrumbo_Death</soundDeath>
-				</li>
+				  <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>.5</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>1</minAge>
+          <soundCall>Pawn_Thrumbo_Call</soundCall>
+          <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+          <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+          <soundDeath>Pawn_Thrumbo_Death</soundDeath>
+        </li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
@@ -898,61 +895,59 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>GR_Triceraffalo</defName>
-		<label>triceraffalo</label>
-		<race>GR_Triceraffalo</race>
-		<combatPower>325</combatPower>
+		<defName>GR_Paraceramuffalo</defName>
+		<label>paraceramuffalo</label>
+		<race>GR_Paraceramuffalo</race>
+		<combatPower>550</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
 
 
 		<lifeStages>
 			<li>
+			 <label>paraceramuffalo calf</label>
+				<labelPlural>paraceramuffalo calves</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dinosaur/Muffalo/GR_Triceraffalo</texPath>
-					<drawSize>3</drawSize>
+					<texPath>Things/Pawn/Animal/Megafauna/Muffalo/GR_Paraceramuffalo</texPath>
+					<drawSize>3.5</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
 						<offset>(0,0,-0.15)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dinosaur/Muffalo/GR_Dessicated_Triceraffalo</texPath>
-					<drawSize>3</drawSize>
+          <texPath>Things/Pawn/Animal/Paraceratherium/megafauna_Dessicated_Paraceratherium</texPath>
+					<drawSize>3.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dinosaur/Muffalo/GR_Triceraffalo</texPath>
-					<drawSize>4</drawSize>
+					<texPath>Things/Pawn/Animal/Megafauna/Muffalo/GR_Paraceramuffalo</texPath>
+					<drawSize>4.8</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
 						<offset>(0,0,-0.15)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dinosaur/Muffalo/GR_Dessicated_Triceraffalo</texPath>
-					<drawSize>4</drawSize>
+          <texPath>Things/Pawn/Animal/Paraceratherium/megafauna_Dessicated_Paraceratherium</texPath>
+					<drawSize>4.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dinosaur/Muffalo/GR_Triceraffalo</texPath>
-					<drawSize>6</drawSize>
+					<texPath>Things/Pawn/Animal/Megafauna/Muffalo/GR_Paraceramuffalo</texPath>
+					<drawSize>6.5</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
 						<offset>(0,0,-0.15)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dinosaur/Muffalo/GR_Dessicated_Triceraffalo</texPath>
-					<drawSize>6</drawSize>
+          <texPath>Things/Pawn/Animal/Paraceratherium/megafauna_Dessicated_Paraceratherium</texPath>
+					<drawSize>6.5</drawSize>
 				</dessicatedBodyGraphicData>
-				<butcherBodyPart>
-					<bodyPartGroup>HornAttackTool</bodyPartGroup>
-					<thing>TriceratopsHorn</thing>
-					<allowFemale>true</allowFemale>
-				</butcherBodyPart>
+				
 
 			</li>
 
@@ -961,52 +956,51 @@
 
 	<!-- Reptile -->
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>GR_Raptortoise</defName>
-		<label>raptortoise</label>
-		<description>This raptor theropod has strange turtle traits. Why strange? Well, if you picture an armored dinosaur you tend to imagine something like an ankylosaurus, not a raptor with a tortoise shell on its back.\n\nUseful abilities: Armored dinosaur that can attack with poison. Also probably the fastest turtle in the Rim...</description>
+		<defName>GR_Lizardochs</defName>
+		<label>lizardochs</label>
+		<description>The lizardochs is basically a reptilian bull, an hybrid between a lizard and the ancestor of domesticated cattle. The lizardochs needs little substenance to survive, at least for a creature of its size, and can be used as a pack animal, which makes it ideal to use in caravans through warm and dry lands such as deserts.\n\nUseful abilities: Produces milk, and acts as a pack animal that needs little food.</description>
 
 
 		<statBases>
-			<MoveSpeed>7</MoveSpeed>
+			<MoveSpeed>4.2</MoveSpeed>
 			<ComfyTemperatureMin>10</ComfyTemperatureMin>
-			<MarketValue>2000</MarketValue>
-			<MeatAmount>100</MeatAmount>
-			<LeatherAmount>20</LeatherAmount>
-			<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+			<MarketValue>900</MarketValue>		
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
 
 		</statBases>
-		<tools>
-			<li>
-				<label>left claw</label>
-				<capacities>
-					<li>Scratch</li>
-					<li>Stab</li>
-				</capacities>
-				<power>14</power>
-				<cooldownTime>1.2</cooldownTime>
-				<linkedBodyPartsGroup>FootClawAttackTool</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>right claw</label>
-				<capacities>
-					<li>Scratch</li>
-					<li>Stab</li>
-				</capacities>
-				<power>14</power>
-				<cooldownTime>1.2</cooldownTime>
-				<linkedBodyPartsGroup>FootClawAttackTool</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>teeth</label>
-				<capacities>
-					<li>GR_VeryToxicBite</li>
-				</capacities>
-				<power>15</power>
-				<cooldownTime>1.4</cooldownTime>
-				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-			</li>
-		</tools>
+		 <tools>
+      <li>
+        <label>left hoof</label>
+        <cooldownTime>1.65</cooldownTime>
+        <power>10</power>
+        <capacities><li>Blunt</li></capacities>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right hoof</label>
+        <cooldownTime>1.65</cooldownTime>
+        <power>10</power>
+        <capacities><li>Blunt</li></capacities>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>horn</label>
+        <cooldownTime>1.35</cooldownTime>
+        <power>18</power>
+        <capacities><li>Blunt</li><li>Stab</li></capacities>
+        <chanceFactor>0.45</chanceFactor>
+        <linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <cooldownTime>1.65</cooldownTime>
+        <power>15</power>
+        <capacities><li>Blunt</li></capacities>
+        <chanceFactor>0.25</chanceFactor>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+      </li>
+    </tools>
 
 		<comps>
 
@@ -1015,36 +1009,36 @@
 				<dinostamina>true</dinostamina>
 				<poisonouscloud>true</poisonouscloud>
 			</li>
-			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>GR_RaptortoiseEggUnfertilized</eggUnfertilizedDef>
-				<eggFertilizedDef>GR_RaptortoiseEggFertilized</eggFertilizedDef>
-				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>30</eggLayIntervalDays>
-				<eggCountRange>1</eggCountRange>
+			<li Class="CompProperties_Milkable">
+				<milkDef>GR_GreenMilk</milkDef>
+				<milkIntervalDays>2</milkIntervalDays>
+				<milkAmount>16</milkAmount>
 			</li>
 
 		</comps>
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+	  <herdMigrationAllowed>false</herdMigrationAllowed>
 
-			<herdAnimal>false</herdAnimal>
-			<predator>true</predator>
-			<body>TheropodWithClaws</body>
-			<baseHungerRate>0.55</baseHungerRate>
-			<baseBodySize>2</baseBodySize>
+			<herdAnimal>true</herdAnimal>
+			<predator>false</predator>
+			<body>QuadrupedAnimalWithHoovesAndHorn</body>
+			<baseHungerRate>0.15</baseHungerRate>
+			<baseBodySize>3</baseBodySize>
 			<baseHealthScale>2.5</baseHealthScale>
-			<foodType>CarnivoreAnimal</foodType>
-			<gestationPeriodDays>30</gestationPeriodDays>
-			<packAnimal>false</packAnimal>
-			<wildness>0.95</wildness>
-			<lifeExpectancy>35</lifeExpectancy>
-			<trainability>Advanced</trainability>
-			<manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>1</manhunterOnDamageChance>
-			<useLeatherFrom>Utahraptor</useLeatherFrom>
-			<useMeatFrom>Utahraptor</useMeatFrom>
+			<foodType>VegetarianRoughAnimal</foodType>
+			      <packAnimal>true</packAnimal>
 
-			<nuzzleMtbHours>275</nuzzleMtbHours>
+      <leatherDef>Leather_Heavy</leatherDef>
+      <wildness>0.6</wildness>
+      <trainability>Intermediate</trainability>
+      <useMeatFrom>Iguana</useMeatFrom>
+      <gestationPeriodDays>20</gestationPeriodDays>
+      <lifeExpectancy>35</lifeExpectancy>
+      <manhunterOnDamageChance>0.65</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
+
+			<nuzzleMtbHours>150</nuzzleMtbHours>
 			<litterSizeCurve>
 				<points>
 					<li>(0.99, 0)</li>
@@ -1064,6 +1058,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.8</minAge>
+					          <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+          <soundDeath>Pawn_Muffalo_Death</soundDeath>
+          <soundCall>Pawn_Muffalo_Call</soundCall>
+          <soundAngry>Pawn_Muffalo_Angry</soundAngry>
 
 				</li>
 			</lifeStageAges>
@@ -1074,62 +1072,65 @@
 		<tradeTags>
 			<li>AnimalExotic</li>
 		</tradeTags>
-		<butcherProducts>
-			<GR_TortoiseShell>15</GR_TortoiseShell>
-		</butcherProducts>
-
+		
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>GR_Raptortoise</defName>
-		<label>raptortoise</label>
-		<race>GR_Raptortoise</race>
-		<combatPower>450</combatPower>
+		<defName>GR_Lizardochs</defName>
+		<label>lizardochs</label>
+		<race>GR_Lizardochs</race>
+		<combatPower>250</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
-
+<labelPlural>lizardochses</labelPlural>
+    <labelMale>lizardochs bull</labelMale>
+    <labelFemale>lizardochs cow</labelFemale>
+	<labelMalePlural>lizardochs bulls</labelMalePlural>
+	<labelFemalePlural>lizardochs cows</labelFemalePlural>
 
 		<lifeStages>
 			<li>
+			        <label>lizardochs calf</label>
+
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dinosaur/Reptile/GR_Raptortoise</texPath>
-					<drawSize>1.9</drawSize>
+					<texPath>Things/Pawn/Animal/Megafauna/Reptile/GR_Lizardochs</texPath>
+					<drawSize>1.8</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
 						<offset>(0,0,-0.15)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dinosaur/Reptile/GR_Dessicated_Raptortoise</texPath>
-					<drawSize>1.9</drawSize>
+					<texPath>Things/Pawn/Animal/Megafauna/Reptile/GR_Dessicated_Lizardochs</texPath>
+					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dinosaur/Reptile/GR_Raptortoise</texPath>
-					<drawSize>2.7</drawSize>
+					<texPath>Things/Pawn/Animal/Megafauna/Reptile/GR_Lizardochs</texPath>
+					<drawSize>2.6</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
 						<offset>(0,0,-0.15)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dinosaur/Reptile/GR_Dessicated_Raptortoise</texPath>
-					<drawSize>2.7</drawSize>
+					<texPath>Things/Pawn/Animal/Megafauna/Reptile/GR_Dessicated_Lizardochs</texPath>
+					<drawSize>2.6</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dinosaur/Reptile/GR_Raptortoise</texPath>
-					<drawSize>3.5</drawSize>
+					<texPath>Things/Pawn/Animal/Megafauna/Reptile/GR_Lizardochs</texPath>
+					<drawSize>4</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
 						<offset>(0,0,-0.15)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dinosaur/Reptile/GR_Dessicated_Raptortoise</texPath>
-					<drawSize>3.5</drawSize>
+					<texPath>Things/Pawn/Animal/Megafauna/Reptile/GR_Dessicated_Lizardochs</texPath>
+					<drawSize>4</drawSize>
 				</dessicatedBodyGraphicData>
 
 
@@ -1137,46 +1138,226 @@
 
 		</lifeStages>
 	</PawnKindDef>
+	
+		<!-- Rodent -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>GR_Doedicoon</defName>
+		<label>doedicoon</label>
+		<description>This armoured rodent is an hybrid of a raccoon and a Doedicurus. The Doedicoon breeds fast, and its armor can be useful in the frontlines.\n\nUseful abilities: Armoured rodent</description>
+
+		<statBases>
+			<MoveSpeed>4.1</MoveSpeed>
+			<ComfyTemperatureMin>-35</ComfyTemperatureMin>
+			<MarketValue>200</MarketValue>			
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+
+		</statBases>
+		 <tools>
+      <li>
+        <label>tail</label>
+        <cooldownTime>3</cooldownTime>
+        <power>7</power>
+        <capacities><li>Blunt</li></capacities>
+        <chanceFactor>0.25</chanceFactor>
+        <linkedBodyPartsGroup>TailWeapon</linkedBodyPartsGroup>
+		  <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>9</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>left claw</label>
+        <cooldownTime>1.75</cooldownTime>
+        <power>3</power>
+        <capacities><li>Scratch</li></capacities>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <cooldownTime>1.75</cooldownTime>
+        <power>3</power>
+        <capacities><li>Scratch</li></capacities>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <cooldownTime>1.8</cooldownTime>
+        <power>4</power>
+        <capacities><li>Bite</li></capacities>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+      </li>
+    </tools>
+		<comps>
+
+
+			<li Class="DraftingPatcher.CompProperties_Draftable">
+				<dinostamina>true</dinostamina>
+				<burrowing>true</burrowing>
+			</li>
+			
+
+		</comps>
+		<race>
+			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+	  <herdMigrationAllowed>false</herdMigrationAllowed>
+
+			<herdAnimal>true</herdAnimal>
+			<predator>false</predator>
+			<body>QuadrupedAnimalWithCarapace</body>
+			 <baseBodySize>0.3</baseBodySize>
+			<baseHealthScale>0.4</baseHealthScale>
+			<baseHungerRate>0.32</baseHungerRate>
+			<foodType>OmnivoreRoughAnimal</foodType>
+			<gestationPeriodDays>8</gestationPeriodDays>
+			<mateMtbHours>4</mateMtbHours>
+			<packAnimal>false</packAnimal>
+			<wildness>0.70</wildness>
+			<lifeExpectancy>6</lifeExpectancy>
+			<trainability>Intermediate</trainability>
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.25</manhunterOnDamageChance>
+			<leatherDef>Leather_Heavy</leatherDef>
+			<useMeatFrom>Raccoon</useMeatFrom>
+
+			<litterSizeCurve>
+				<points>
+				          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(2, 1)</li>
+          <li>(2.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				 <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.15</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.4</minAge>
+          <soundWounded>Pawn_Boomrat_Wounded</soundWounded>
+          <soundDeath>Pawn_Boomrat_Death</soundDeath>
+          <soundCall>Pawn_Boomrat_Call</soundCall>
+          <soundAngry>Pawn_Boomrat_Angry</soundAngry>
+        </li>
+			</lifeStageAges>
+			      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalExotic</li>
+		</tradeTags>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>GR_Doedicoon</defName>
+		<label>doedicoon</label>
+		<race>GR_Doedicoon</race>
+		<combatPower>55</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+
+
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Megafauna/Rodent/GR_Doedicoon</texPath>
+					<drawSize>1.5</drawSize>
+					
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Megafauna/Rodent/GR_Dessicated_Doedicoon</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Megafauna/Rodent/GR_Doedicoon</texPath>
+					<drawSize>1.75</drawSize>
+					
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Megafauna/Rodent/GR_Dessicated_Doedicoon</texPath>
+					<drawSize>1.75</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Megafauna/Rodent/GR_Doedicoon</texPath>
+					<drawSize>2.1</drawSize>
+					
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Megafauna/Rodent/GR_Dessicated_Doedicoon</texPath>
+					<drawSize>2.1</drawSize>
+				</dessicatedBodyGraphicData>
+				
+			</li>
+
+		</lifeStages>
+	</PawnKindDef>
 
 	<!-- Thrumbo -->
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>GR_Stegothrumbo</defName>
-		<label>stegothrumbo</label>
-		<description>A colossal, armored dinosaur-thrumbo hybrid. Probably not as smart as a thrumbo, but ready to kick some serious ass.\n\nUseful abilities: Armored dinosaur</description>
+		<defName>GR_Thrumdraeodon</defName>
+		<label>thrumdraeodon</label>
+		<description>A huge, boar-like animal that will eat anything on its path. Thrumdraedons are cunning and resourceful.\n\nUseful abilities: thrumdraeodons are high-maintenance thrumbo hybrids, but they excell at combat.</description>
 
 
 		<statBases>
-			<MoveSpeed>4.5</MoveSpeed>
-			<ComfyTemperatureMin>10</ComfyTemperatureMin>
-			<MarketValue>3500</MarketValue>
-			<MeatAmount>80</MeatAmount>
-			<LeatherAmount>50</LeatherAmount>
-			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
-
+			<MoveSpeed>5.5</MoveSpeed>
+			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
+			<MarketValue>2000</MarketValue>
+			
 		</statBases>
 		<tools>
-			<li>
-				<label>tail</label>
-				<capacities>
-
-					<li>Blunt</li>
-				</capacities>
-				<power>28</power>
-				<cooldownTime>2.2</cooldownTime>
-				<linkedBodyPartsGroup>TailAttackTool</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>head</label>
+		<li>
+				<label>horn</label>
 				<capacities>
 					<li>Scratch</li>
 					<li>Stab</li>
 				</capacities>
-				<power>45</power>
-				<cooldownTime>2.2</cooldownTime>
-				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<chanceFactor>0.2</chanceFactor>
+				<power>28</power>
+				<cooldownTime>1.85</cooldownTime>
+				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
 			</li>
+			 <li>
+        <label>left hoof</label>
+        <cooldownTime>1.55</cooldownTime>
+        <power>14</power>
+        <capacities><li>Blunt</li></capacities>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right hoof</label>
+        <cooldownTime>1.55</cooldownTime>
+        <power>14</power>
+        <capacities><li>Blunt</li></capacities>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <cooldownTime>1.6</cooldownTime>
+        <power>20</power>
+        <capacities><li>Bite</li></capacities>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+		  <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>23</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
 		</tools>
 		<comps>
 
@@ -1185,36 +1366,32 @@
 				<dinostamina>true</dinostamina>
 				<stampede>true</stampede>
 			</li>
-			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>GR_StegothrumboEggUnfertilized</eggUnfertilizedDef>
-				<eggFertilizedDef>GR_StegothrumboEggUnfertilized</eggFertilizedDef>
-				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>40</eggLayIntervalDays>
-				<eggCountRange>1</eggCountRange>
-			</li>
+			
 
 		</comps>
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 
-			<herdAnimal>false</herdAnimal>
-			<predator>false</predator>
-			<body>ThyreophoraeWithSpikes</body>
-			<baseHungerRate>1.8</baseHungerRate>
-			<baseBodySize>9</baseBodySize>
-			<baseHealthScale>12</baseHealthScale>
-			<foodType>VegetarianRoughAnimal</foodType>
-			<gestationPeriodDays>40</gestationPeriodDays>
-			<packAnimal>false</packAnimal>
-			<wildness>0.70</wildness>
-			<lifeExpectancy>450</lifeExpectancy>
-			<trainability>Intermediate</trainability>
-			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>0.25</manhunterOnDamageChance>
-			<useLeatherFrom>Stegosaurus</useLeatherFrom>
-			<useMeatFrom>Stegosaurus</useMeatFrom>
+			<herdAnimal>true</herdAnimal>
+      <predator>true</predator>
+      <body>QuadrupedAnimalWithHoovesAndHorn</body>
+	  <herdMigrationAllowed>false</herdMigrationAllowed>
+      <baseHungerRate>1</baseHungerRate>
+      <baseBodySize>4.5</baseBodySize>
+      <baseHealthScale>15</baseHealthScale>
+      <foodType>OmnivoreAnimal, OvivoreAnimal, DendrovoreAnimal</foodType>
+      <gestationPeriodDays>50</gestationPeriodDays>
+      <packAnimal>false</packAnimal>
+      <wildness>0.90</wildness>
+      <lifeExpectancy>75</lifeExpectancy>
+      <trainability>Advanced</trainability>
+	  <maxPreyBodySize>6</maxPreyBodySize>
+      <manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+	<useLeatherFrom>Thrumbo</useLeatherFrom>
+      <useMeatFrom>Pig</useMeatFrom>
 
-			<nuzzleMtbHours>275</nuzzleMtbHours>
+			<nuzzleMtbHours>175</nuzzleMtbHours>
 			<litterSizeCurve>
 				<points>
 					<li>(0.99, 0)</li>
@@ -1229,11 +1406,11 @@
 				</li>
 				<li>
 					<def>AnimalJuvenile</def>
-					<minAge>0.8</minAge>
+					<minAge>0.6</minAge>
 				</li>
 				<li>
 					<def>AnimalAdult</def>
-					<minAge>1.5</minAge>
+					<minAge>1</minAge>
 					<soundCall>Pawn_Thrumbo_Call</soundCall>
 					<soundAngry>Pawn_Thrumbo_Angry</soundAngry>
 					<soundWounded>Pawn_Thrumbo_Pain</soundWounded>
@@ -1250,9 +1427,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>GR_Stegothrumbo</defName>
-		<label>stegothrumbo</label>
-		<race>GR_Stegothrumbo</race>
+		<defName>GR_Thrumdraeodon</defName>
+		<label>thrumdraeodon</label>
+		<race>GR_Thrumdraeodon</race>
 		<combatPower>525</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
@@ -1261,44 +1438,44 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dinosaur/Thrumbo/GR_Stegothrumbo</texPath>
-					<drawSize>3</drawSize>
+					<texPath>Things/Pawn/Animal/Megafauna/Thrumbo/GR_Thrumdraeodon</texPath>
+					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
 						<offset>(0,0,-0.15)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dinosaur/Thrumbo/GR_Dessicated_Stegothrumbo</texPath>
-					<drawSize>3</drawSize>
+					<texPath>Things/Pawn/Animal/Megafauna/Thrumbo/GR_Dessicated_Thrumdraeodon</texPath>
+					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dinosaur/Thrumbo/GR_Stegothrumbo</texPath>
-					<drawSize>4.5</drawSize>
+					<texPath>Things/Pawn/Animal/Megafauna/Thrumbo/GR_Thrumdraeodon</texPath>
+					<drawSize>3.5</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
 						<offset>(0,0,-0.15)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dinosaur/Thrumbo/GR_Dessicated_Stegothrumbo</texPath>
-					<drawSize>4.5</drawSize>
+					<texPath>Things/Pawn/Animal/Megafauna/Thrumbo/GR_Dessicated_Thrumdraeodon</texPath>
+					<drawSize>3.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dinosaur/Thrumbo/GR_Stegothrumbo</texPath>
-					<drawSize>6</drawSize>
+					<texPath>Things/Pawn/Animal/Megafauna/Thrumbo/GR_Thrumdraeodon</texPath>
+					<drawSize>4.6</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
 						<offset>(0,0,-0.15)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dinosaur/Thrumbo/GR_Dessicated_Stegothrumbo</texPath>
-					<drawSize>6</drawSize>
+					<texPath>Things/Pawn/Animal/Megafauna/Thrumbo/GR_Dessicated_Thrumdraeodon</texPath>
+					<drawSize>4.6</drawSize>
 				</dessicatedBodyGraphicData>
 				<butcherBodyPart>
 					<bodyPartGroup>HeadAttackTool</bodyPartGroup>
@@ -1312,51 +1489,78 @@
 
 	<!-- Wolf -->
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>GR_Velociwolf</defName>
-		<label>velociwolf</label>
-		<description>The raptor theropod hybrid escaped the shame of having feathers by instead having hair. So, uhm, still ridiculous. They are very fast predators that hunt in packs.\n\nUseful abilities: Faster than any dinosaur</description>
+		<defName>GR_WoolyWolf</defName>
+		<label>wooly Wolf</label>
+		<description>Just like Wooly Mammoths and Wooly Rhinos, the Wooly Wolf is a creature perfectly adapted to cold climates. Wooly wolves are an excellent source of high quality wool, since they produce it much faster than a mammoth.\n\nUseful abilities: Fast wool production</description>
 
 
 		<statBases>
-			<MoveSpeed>9</MoveSpeed>
-			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
-			<MarketValue>2000</MarketValue>
-			<MeatAmount>100</MeatAmount>
-			<LeatherAmount>20</LeatherAmount>
-
+			<MoveSpeed>8</MoveSpeed>
+			<ComfyTemperatureMin>-80</ComfyTemperatureMin>
+			<ComfyTemperatureMax>15</ComfyTemperatureMax>
+			<MarketValue>1500</MarketValue>
+			
 
 		</statBases>
-		<tools>
-			<li>
-				<label>left claw</label>
-				<capacities>
-					<li>Scratch</li>
-					<li>Stab</li>
-				</capacities>
-				<power>8</power>
-				<cooldownTime>1.1</cooldownTime>
-				<linkedBodyPartsGroup>FootClawAttackTool</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>right claw</label>
-				<capacities>
-					<li>Scratch</li>
-					<li>Stab</li>
-				</capacities>
-				<power>8</power>
-				<cooldownTime>1.1</cooldownTime>
-				<linkedBodyPartsGroup>FootClawAttackTool</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>teeth</label>
-				<capacities>
-					<li>Bite</li>
-				</capacities>
-				<power>15</power>
-				<cooldownTime>1.3</cooldownTime>
-				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-			</li>
-		</tools>
+			<tools>
+		<li>
+			<label>left claw</label>
+			<capacities>
+				<li>Scratch</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>1.65</cooldownTime>
+			<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>15</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+		<li>
+			<label>right claw</label>
+			<capacities>
+				<li>Scratch</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>1.65</cooldownTime>
+			<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>15</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+		<li>
+			<capacities>
+				<li>Bite</li>
+			</capacities>
+			<power>11</power>
+			<cooldownTime>2.1</cooldownTime>
+			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>16</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+	<li>
+        <label>tusk</label>
+        <cooldownTime>2.2</cooldownTime>
+        <power>16</power>
+        <capacities><li>Scratch</li><li>Stab</li></capacities>
+        <linkedBodyPartsGroup>TuskAttackTool</linkedBodyPartsGroup>
+      </li>
+	</tools>
 		<comps>
 
 
@@ -1364,13 +1568,11 @@
 				<dinostamina>true</dinostamina>
 				<adrenalineburst>true</adrenalineburst>
 			</li>
-			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>GR_VelociwolfEggUnfertilized</eggUnfertilizedDef>
-				<eggFertilizedDef>GR_VelociwolfEggFertilized</eggFertilizedDef>
-				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>30</eggLayIntervalDays>
-				<eggCountRange>1</eggCountRange>
-			</li>
+			      <li Class="CompProperties_Shearable">
+        <woolDef>MammothWool</woolDef>
+        <shearIntervalDays>10</shearIntervalDays>
+        <woolAmount>105</woolAmount>
+      </li>
 
 		</comps>
 		<race>
@@ -1378,22 +1580,22 @@
 
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
-			<body>TheropodWithClaws</body>
+			<body>GR_QuadrupedAnimalWithPawsAndTusks</body>
 			<baseHungerRate>0.55</baseHungerRate>
-			<baseBodySize>0.75</baseBodySize>
-			<baseHealthScale>1.5</baseHealthScale>
+			<baseBodySize>1.5</baseBodySize>
+			<baseHealthScale>2</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
 			<gestationPeriodDays>30</gestationPeriodDays>
 			<packAnimal>false</packAnimal>
-			<wildness>0.9</wildness>
-			<lifeExpectancy>35</lifeExpectancy>
+			<wildness>0.8</wildness>
+			<lifeExpectancy>70</lifeExpectancy>
 			<trainability>Advanced</trainability>
 			<manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
-			<useLeatherFrom>Velociraptor</useLeatherFrom>
-			<useMeatFrom>Velociraptor</useMeatFrom>
+			<leatherDef>Leather_Elephant</leatherDef>
+			<useMeatFrom>Wolf_Timber</useMeatFrom>
 
-			<nuzzleMtbHours>275</nuzzleMtbHours>
+			<nuzzleMtbHours>45</nuzzleMtbHours>
 			<litterSizeCurve>
 				<points>
 					<li>(0.99, 0)</li>
@@ -1413,6 +1615,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.8</minAge>
+					          <soundCall>Pawn_Elephant_Call</soundCall>
+          <soundAngry>Pawn_Elephant_Angry</soundAngry>
+          <soundWounded>Pawn_Elephant_Injured</soundWounded>
+          <soundDeath>Pawn_Elephant_Dead</soundDeath>
 
 				</li>
 			</lifeStageAges>
@@ -1426,18 +1632,20 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>GR_Velociwolf</defName>
-		<label>velociwolf</label>
-		<race>GR_Velociwolf</race>
-		<combatPower>450</combatPower>
+		<defName>GR_WoolyWolf</defName>
+		<label>wooly wolf</label>
+		<race>GR_WoolyWolf</race>
+		<combatPower>400</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
-
+		<labelPlural>woolly wolves</labelPlural>
 
 		<lifeStages>
 			<li>
+			<label>woolly wolf puppy</label>
+			<labelPlural>woolly wolf puppies</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dinosaur/Wolf/GR_Velociwolf</texPath>
+					<texPath>Things/Pawn/Animal/Megafauna/Wolf/GR_WoolyWolf</texPath>
 					<drawSize>1.95</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
@@ -1445,13 +1653,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dinosaur/Wolf/GR_Dessicated_Velociwolf</texPath>
+					<texPath>Things/Pawn/Animal/Megafauna/Wolf/GR_Dessicated_WoolyWolf</texPath>
 					<drawSize>1.95</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dinosaur/Wolf/GR_Velociwolf</texPath>
+					<texPath>Things/Pawn/Animal/Megafauna/Wolf/GR_WoolyWolf</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
@@ -1459,13 +1667,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dinosaur/Wolf/GR_Dessicated_Velociwolf</texPath>
+					<texPath>Things/Pawn/Animal/Megafauna/Wolf/GR_Dessicated_WoolyWolf</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dinosaur/Wolf/GR_Velociwolf</texPath>
+					<texPath>Things/Pawn/Animal/Megafauna/Wolf/GR_WoolyWolf</texPath>
 					<drawSize>3</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
@@ -1473,10 +1681,14 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dinosaur/Wolf/GR_Dessicated_Velociwolf</texPath>
+					<texPath>Things/Pawn/Animal/Megafauna/Wolf/GR_Dessicated_WoolyWolf</texPath>
 					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
-
+<butcherBodyPart>
+          <bodyPartGroup>TuskAttackTool</bodyPartGroup>
+          <thing>MammothTusk</thing>
+          <allowFemale>true</allowFemale>
+        </butcherBodyPart>
 
 			</li>
 
