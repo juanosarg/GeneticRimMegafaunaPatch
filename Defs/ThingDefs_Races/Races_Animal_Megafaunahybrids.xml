@@ -87,7 +87,7 @@
 			</li>
 			<li Class="DraftingPatcher.CompProperties_Draftable">
 				<rage>true</rage>
-				<dinostamina>true</dinostamina>
+				<keensenses>true</keensenses>
 			</li>
 
 		</comps>
@@ -270,7 +270,7 @@
 				<customResourceString>ChemfuelProd</customResourceString>
 			</li>
 			<li Class="DraftingPatcher.CompProperties_Draftable">
-				<dinostamina>true</dinostamina>
+				<keensenses>true</keensenses>
 				<explodable>true</explodable>
 			</li>
 			
@@ -441,7 +441,7 @@
 
 
 			<li Class="DraftingPatcher.CompProperties_Draftable">
-				<dinostamina>true</dinostamina>
+				<keensenses>true</keensenses>
 				<chickenRimPox>true</chickenRimPox>
 			</li>
 			<li Class="CompProperties_EggLayer">
@@ -652,7 +652,7 @@
 
 
 			<li Class="DraftingPatcher.CompProperties_Draftable">
-				<dinostamina>true</dinostamina>
+				<keensenses>true</keensenses>
 				<insectclouds>true</insectclouds>
 			</li>
 			<li Class="CompProperties_EggLayer">
@@ -823,7 +823,7 @@
 
 
 			<li Class="DraftingPatcher.CompProperties_Draftable">
-				<dinostamina>true</dinostamina>
+				<keensenses>true</keensenses>
 				<carrymore>true</carrymore>
 			</li>
 			
@@ -1006,7 +1006,7 @@
 
 
 			<li Class="DraftingPatcher.CompProperties_Draftable">
-				<dinostamina>true</dinostamina>
+				<keensenses>true</keensenses>
 				<poisonouscloud>true</poisonouscloud>
 			</li>
 			<li Class="CompProperties_Milkable">
@@ -1195,7 +1195,7 @@
 
 
 			<li Class="DraftingPatcher.CompProperties_Draftable">
-				<dinostamina>true</dinostamina>
+				<keensenses>true</keensenses>
 				<burrowing>true</burrowing>
 			</li>
 			
@@ -1363,7 +1363,7 @@
 
 
 			<li Class="DraftingPatcher.CompProperties_Draftable">
-				<dinostamina>true</dinostamina>
+				<keensenses>true</keensenses>
 				<stampede>true</stampede>
 			</li>
 			
@@ -1565,7 +1565,7 @@
 
 
 			<li Class="DraftingPatcher.CompProperties_Draftable">
-				<dinostamina>true</dinostamina>
+				<keensenses>true</keensenses>
 				<adrenalineburst>true</adrenalineburst>
 			</li>
 			      <li Class="CompProperties_Shearable">
