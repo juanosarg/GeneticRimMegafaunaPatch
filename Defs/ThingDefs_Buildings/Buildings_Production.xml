@@ -9,11 +9,17 @@
     <defName>GR_MegafaunaGenePod</defName>
     <label>megafauna genePod</label>
     <thingClass>Building_WorkTable</thingClass>
+	<canOverlapZones>false</canOverlapZones>
+    <minifiedDef>MinifiedThing</minifiedDef>
+	<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
     <description>Megafauna genetic material samples are combined and grown in this laboratory.</description>
     <graphicData>
       <texPath>Things/Building/GR_MegafaunaGenePod</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(2,4)</drawSize>
+     <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,3.5)</drawSize>
      
     </graphicData>
     <castEdgeShadows>false</castEdgeShadows>
@@ -25,15 +31,17 @@
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
+			<Mass>75</Mass>
+
       <WorkToBuild>2000</WorkToBuild>
       <MaxHitPoints>180</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
-    <size>(2,4)</size>
+    <size>(2,2)</size>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
-    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
    
     <inspectorTabs>
@@ -51,7 +59,7 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
-          <li>ToolCabinet</li>
+          <li>GR_NutrientVat</li>
         </linkableFacilities>
       </li>
     </comps>
