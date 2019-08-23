@@ -38,6 +38,8 @@
     </statBases>
     <stuffProps>
       <color>(141,167,175)</color>
+	        <commonality>0</commonality>
+
     </stuffProps>
   </ThingDef>
 
