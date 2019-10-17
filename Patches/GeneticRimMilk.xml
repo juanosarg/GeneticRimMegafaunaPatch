@@ -1,0 +1,23 @@
+<Patch>
+
+    <!-- "Extract milk from hybrid milks" recipe -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName = "GR_ExtractMilkFromMilks"]/ingredients/li/filter/thingDefs</xpath>
+        <success>Normal</success>
+        <value>
+            <li>GR_ParaMilk</li>
+            <li>GR_GreenMilk</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName = "GR_ExtractMilkFromMilks"]/fixedIngredientFilter/thingDefs</xpath>
+        <success>Normal</success>
+        <value>
+            <li>GR_ParaMilk</li>
+            <li>GR_GreenMilk</li>
+        </value>
+    </Operation>
+
+</Patch>
