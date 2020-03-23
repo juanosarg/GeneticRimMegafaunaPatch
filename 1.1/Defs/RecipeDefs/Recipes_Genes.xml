@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+	<RecipeDef>
+		<defName>GR_ExtractMegafaunaGenes</defName>
+		<label>extract genes from a megafauna animal</label>
+		<description>Extract genetic material from a megafauna animal.</description>
+		<jobString>Extracting Genetic Material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+			<li>GR_GeneticExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+
+					<thingDefs>
+						<li>Corpse_Megasloth</li>
+						<li>Corpse_Arthropleura</li>
+						<li>Corpse_Doedicurus</li>
+						<li>Corpse_Daeodon</li>
+						<li>Corpse_Gigantopithecus</li>
+						<li>Corpse_Paraceratherium</li>
+						<li>Corpse_Titanis</li>
+						<li>Corpse_Titanoboa</li>
+						<li>Corpse_WoollyMammoth</li>						
+						<li>Corpse_Elasmotherium</li>
+						<li>Corpse_Smilodon</li>
+						<li>Corpse_Chalicotherium</li>
+						<li>Corpse_Megaloceros</li>
+						<li>Corpse_Procoptodon</li>
+						<li>Corpse_Megalania</li>
+						<li>Corpse_Gomphotaria</li>
+						<li>Corpse_Diprotodon</li>
+						<li>Corpse_ShortfacedBear</li>						
+						<li>Corpse_Dinocrocuta</li>
+						<li>Corpse_Sivatherium</li>
+						<li>Corpse_Andrewsarchus</li>
+						<li>Corpse_Dinornis</li>
+						<li>Corpse_Macrauchenia</li>
+						<li>Corpse_Quinkana</li>
+						<li>Corpse_Deinotherium</li>
+						<li>Corpse_Aurochs</li>
+						<li>Corpse_Megalochelys</li>						
+						<li>Corpse_Palaeeudyptes</li>
+						<li>Corpse_Josephoartigasia</li>
+						<li>Corpse_Gigantophis</li>
+						<li>Corpse_Meganeura</li>
+						<li>Corpse_Zygolophodon</li>
+						<li>Corpse_Platybelodon</li>
+						<li>Corpse_Purussaurus</li>
+						<li>Corpse_Uintatherium</li>
+						<li>Corpse_Pulmonoscorpius</li>
+						<li>Corpse_Dinopithecus</li>
+						<li>Corpse_Castoroides</li>
+						<li>Corpse_Enhydriodon</li>
+
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>Corpse_Megasloth</li>
+						<li>Corpse_Arthropleura</li>
+						<li>Corpse_Doedicurus</li>
+						<li>Corpse_Daeodon</li>
+						<li>Corpse_Gigantopithecus</li>
+						<li>Corpse_Paraceratherium</li>
+						<li>Corpse_Titanis</li>
+						<li>Corpse_Titanoboa</li>
+						<li>Corpse_WoollyMammoth</li>						
+						<li>Corpse_Elasmotherium</li>
+						<li>Corpse_Smilodon</li>
+						<li>Corpse_Chalicotherium</li>
+						<li>Corpse_Megaloceros</li>
+						<li>Corpse_Procoptodon</li>
+						<li>Corpse_Megalania</li>
+						<li>Corpse_Gomphotaria</li>
+						<li>Corpse_Diprotodon</li>
+						<li>Corpse_ShortfacedBear</li>						
+						<li>Corpse_Dinocrocuta</li>
+						<li>Corpse_Sivatherium</li>
+						<li>Corpse_Andrewsarchus</li>
+						<li>Corpse_Dinornis</li>
+						<li>Corpse_Macrauchenia</li>
+						<li>Corpse_Quinkana</li>
+						<li>Corpse_Deinotherium</li>
+						<li>Corpse_Aurochs</li>
+						<li>Corpse_Megalochelys</li>						
+						<li>Corpse_Palaeeudyptes</li>
+						<li>Corpse_Josephoartigasia</li>
+						<li>Corpse_Gigantophis</li>
+						<li>Corpse_Meganeura</li>
+						<li>Corpse_Zygolophodon</li>
+						<li>Corpse_Platybelodon</li>
+						<li>Corpse_Purussaurus</li>
+						<li>Corpse_Uintatherium</li>
+						<li>Corpse_Pulmonoscorpius</li>
+						<li>Corpse_Dinopithecus</li>
+						<li>Corpse_Castoroides</li>
+						<li>Corpse_Enhydriodon</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_MegafaunaGenetic>1</GR_MegafaunaGenetic>
+		</products>
+		<skillRequirements>
+			<Intellectual>8</Intellectual>
+		</skillRequirements>
+	</RecipeDef>
+
+	
+
+
+
+
+</Defs>
