@@ -4,6 +4,7 @@
 	<supportedVersions>
       <li>1.0</li>
       <li>1.1</li>
+	  <li>1.2</li>
    </supportedVersions>
 	<packageId>sarg.geneticrimmegafauna</packageId>
 	 <modDependencies>
@@ -37,6 +38,7 @@ Should be savegame compatible and not break anything. Should!
 Credit goes to Spino for all his awesome work on Rimworld.
 
 &lt;size=24&gt;Changelog&lt;/size&gt;
+v2.1: Updated to RW 1.2. Maybe, perhaps, hopefully, fixed the hash collision with squirrel meat (11/08/20)
 v2.0: Updated to RW 1.1 (23/03/20)
 v1.101: Changed all hybrids to use GeneticAnimal instead of ExoticAnimal so they don't appear on modded merchants. Tweaked wool values (23/08/19)
 v1.1: New building graphic (28/01/19)
