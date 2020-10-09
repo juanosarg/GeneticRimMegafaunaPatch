@@ -14,7 +14,7 @@
     <label>megafauna bear incubator</label>
     <description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a bear-Elasmotherium hybrid</description>
     <comps>
-      <li Class="NewHatcher.CompProperties_Incubator">
+      <li Class="GeneticRim.CompProperties_Incubator">
         <hatcherDaystoHatch>1</hatcherDaystoHatch>
         <hatcherPawn>GR_Elasmobearium</hatcherPawn>
       </li>
@@ -26,7 +26,7 @@
     <label>megafauna boomalope incubator</label>
     <description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a boomalope-Deinotherium hybrid</description>
     <comps>
-      <li Class="NewHatcher.CompProperties_Incubator">
+      <li Class="GeneticRim.CompProperties_Incubator">
         <hatcherDaystoHatch>1</hatcherDaystoHatch>
         <hatcherPawn>GR_Boomnotherium</hatcherPawn>
       </li>
@@ -38,7 +38,7 @@
     <label>megafauna chicken incubator</label>
     <description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a chicken-Smilodon hybrid</description>
     <comps>
-      <li Class="NewHatcher.CompProperties_Incubator">
+      <li Class="GeneticRim.CompProperties_Incubator">
         <hatcherDaystoHatch>1</hatcherDaystoHatch>
         <hatcherPawn>GR_Chickenlodon</hatcherPawn>
       </li>
@@ -50,7 +50,7 @@
     <label>megafauna insectoid incubator</label>
     <description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into an insectoid-Titanis hybrid</description>
     <comps>
-      <li Class="NewHatcher.CompProperties_Incubator">
+      <li Class="GeneticRim.CompProperties_Incubator">
         <hatcherDaystoHatch>1</hatcherDaystoHatch>
         <hatcherPawn>GR_Mantistanis</hatcherPawn>
       </li>
@@ -62,7 +62,7 @@
     <label>megafauna muffalo incubator</label>
     <description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a muffalo-Paraceratherium hybrid</description>
     <comps>
-      <li Class="NewHatcher.CompProperties_Incubator">
+      <li Class="GeneticRim.CompProperties_Incubator">
         <hatcherDaystoHatch>1</hatcherDaystoHatch>
         <hatcherPawn>GR_Paraceramuffalo</hatcherPawn>
       </li>
@@ -74,7 +74,7 @@
     <label>megafauna reptile incubator</label>
     <description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a lizard-Aurochs hybrid</description>
     <comps>
-      <li Class="NewHatcher.CompProperties_Incubator">
+      <li Class="GeneticRim.CompProperties_Incubator">
         <hatcherDaystoHatch>1</hatcherDaystoHatch>
         <hatcherPawn>GR_Lizardochs</hatcherPawn>
       </li>
@@ -86,7 +86,7 @@
     <label>megafauna rodent incubator</label>
     <description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a rodent-Doedicurus hybrid</description>
     <comps>
-      <li Class="NewHatcher.CompProperties_Incubator">
+      <li Class="GeneticRim.CompProperties_Incubator">
         <hatcherDaystoHatch>1</hatcherDaystoHatch>
         <hatcherPawn>GR_Doedicoon</hatcherPawn>
       </li>
@@ -98,7 +98,7 @@
     <label>megafauna thrumbo incubator</label>
     <description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a thrumbo-Draeodon hybrid</description>
     <comps>
-      <li Class="NewHatcher.CompProperties_Incubator">
+      <li Class="GeneticRim.CompProperties_Incubator">
         <hatcherDaystoHatch>1</hatcherDaystoHatch>
         <hatcherPawn>GR_Thrumdraeodon</hatcherPawn>
       </li>
@@ -110,7 +110,7 @@
     <label>megafauna wolf incubator</label>
     <description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a wolf-Wooly Mammoth hybrid</description>
     <comps>
-      <li Class="NewHatcher.CompProperties_Incubator">
+      <li Class="GeneticRim.CompProperties_Incubator">
         <hatcherDaystoHatch>1</hatcherDaystoHatch>
         <hatcherPawn>GR_WoolyWolf</hatcherPawn>
       </li>

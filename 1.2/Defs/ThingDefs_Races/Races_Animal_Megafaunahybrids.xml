@@ -85,7 +85,7 @@
 				<shearIntervalDays>35</shearIntervalDays>
 				<woolAmount>350</woolAmount>
 			</li>
-			<li Class="DraftingPatcher.CompProperties_Draftable">
+			<li Class="GeneticRim.CompProperties_Draftable">
 				<rage>true</rage>
 				<keensenses>true</keensenses>
 			</li>
@@ -263,13 +263,13 @@
 
 		<comps>
 
-			<li Class="NewAnimalSubproducts.CompProperties_AnimalProduct">
+			<li Class="GeneticRim.CompProperties_AnimalProduct">
 				<resourceDef>Chemfuel</resourceDef>
 				<gatheringIntervalDays>2</gatheringIntervalDays>
 				<resourceAmount>75</resourceAmount>
 				<customResourceString>ChemfuelProd</customResourceString>
 			</li>
-			<li Class="DraftingPatcher.CompProperties_Draftable">
+			<li Class="GeneticRim.CompProperties_Draftable">
 				<keensenses>true</keensenses>
 				<explodable>true</explodable>
 			</li>
@@ -279,7 +279,7 @@
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 	  <herdMigrationAllowed>false</herdMigrationAllowed>
 
-			<deathActionWorkerClass>ExplosionTypes.DeathActionWorker_BiggerExplosion</deathActionWorkerClass>
+			<deathActionWorkerClass>GeneticRim.DeathActionWorker_BiggerExplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
 			<herdAnimal>true</herdAnimal>
 			<predator>false</predator>
@@ -440,7 +440,7 @@
 		<comps>
 
 
-			<li Class="DraftingPatcher.CompProperties_Draftable">
+			<li Class="GeneticRim.CompProperties_Draftable">
 				<keensenses>true</keensenses>
 				<chickenRimPox>true</chickenRimPox>
 			</li>
@@ -651,7 +651,7 @@
 		<comps>
 
 
-			<li Class="DraftingPatcher.CompProperties_Draftable">
+			<li Class="GeneticRim.CompProperties_Draftable">
 				<keensenses>true</keensenses>
 				<insectclouds>true</insectclouds>
 			</li>
@@ -662,7 +662,7 @@
 				<eggLayIntervalDays>20</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			<li Class="NewAnimalSubproducts.CompProperties_Regeneration">
+			<li Class="GeneticRim.CompProperties_Regeneration">
 				<rateInTicks>3000</rateInTicks>
 
 			</li>
@@ -822,7 +822,7 @@
 		<comps>
 
 
-			<li Class="DraftingPatcher.CompProperties_Draftable">
+			<li Class="GeneticRim.CompProperties_Draftable">
 				<keensenses>true</keensenses>
 				<carrymore>true</carrymore>
 			</li>
@@ -1005,7 +1005,7 @@
 		<comps>
 
 
-			<li Class="DraftingPatcher.CompProperties_Draftable">
+			<li Class="GeneticRim.CompProperties_Draftable">
 				<keensenses>true</keensenses>
 				<poisonouscloud>true</poisonouscloud>
 			</li>
@@ -1194,7 +1194,7 @@
 		<comps>
 
 
-			<li Class="DraftingPatcher.CompProperties_Draftable">
+			<li Class="GeneticRim.CompProperties_Draftable">
 				<keensenses>true</keensenses>
 				<burrowing>true</burrowing>
 			</li>
@@ -1362,7 +1362,7 @@
 		<comps>
 
 
-			<li Class="DraftingPatcher.CompProperties_Draftable">
+			<li Class="GeneticRim.CompProperties_Draftable">
 				<keensenses>true</keensenses>
 				<stampede>true</stampede>
 			</li>
@@ -1564,7 +1564,7 @@
 		<comps>
 
 
-			<li Class="DraftingPatcher.CompProperties_Draftable">
+			<li Class="GeneticRim.CompProperties_Draftable">
 				<keensenses>true</keensenses>
 				<adrenalineburst>true</adrenalineburst>
 			</li>
